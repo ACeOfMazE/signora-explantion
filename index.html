@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signora - Sign Language to Speech</title>
+  <style>
+    body {
+      background-color: #0a1a2f;
+      color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0;
+    }
+    header img {
+      width: 200px;
+    }
+    h1, h2 {
+      color: #72c6f5;
+    }
+    section {
+      background: #11233a;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    ul, li {
+      padding-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/mnt/data/Screenshot_2025-07-12_204919-removebg-preview.png" alt="Signora Logo" />
+      <h1>Signora: A Sign Language to Speech Translator</h1>
+    </header>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>Millions rely on sign language, but most non-signers can’t understand it. Signora bridges this gap using Arduino Nano and 5 flex sensors to translate hand gestures into speech using Python.</p>
+    </section>
+
+    <section>
+      <h2>2. Problem Statement</h2>
+      <ul>
+        <li>Communication barrier for hearing/speech impaired people.</li>
+        <li>Lack of real-time, low-cost gesture-to-voice solutions.</li>
+        <li>Commercial tools are expensive or language-limited.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Objective</h2>
+      <ul>
+        <li>Detect gestures via flex sensors on glove.</li>
+        <li>Interpret signals using Python.</li>
+        <li>Convert gestures into readable and audible output.</li>
+        <li>Operate on basic hardware (Arduino + PC).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Components Used</h2>
+      <h3>Hardware:</h3>
+      <ul>
+        <li>Arduino Nano</li>
+        <li>5 Flex Sensors</li>
+        <li>Resistors, Breadboard, Jumper Wires</li>
+        <li>Glove</li>
+        <li>USB Cable</li>
+      </ul>
+      <h3>Software & Libraries:</h3>
+      <ul>
+        <li>Python</li>
+        <li>serial</li>
+        <li>pyttsx3</li>
+        <li>time, threading, os, logging, collections</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. How the System Works</h2>
+      <ul>
+        <li><strong>Flex Sensors:</strong> Detect finger bending resistance.</li>
+        <li><strong>Arduino:</strong> Reads values, sends data over USB.</li>
+        <li><strong>Python:</strong> Matches patterns, prints and speaks gesture text using pyttsx3.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Example Gesture: "HELLO"</h2>
+      <ul>
+        <li>Thumb: bent (value > 90)</li>
+        <li>Index, Middle: straight</li>
+        <li>Ring, Pinky: bent</li>
+        <li>Recognized and spoken by the system.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Current Limitations</h2>
+      <ul>
+        <li>Arduino Nano has limited power and ports.</li>
+        <li>Does not support dynamic/moving gestures.</li>
+        <li>False triggers possible due to noise.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Achievements & Impact</h2>
+      <ul>
+        <li>Supports communication for non-verbal users.</li>
+        <li>Offline and affordable.</li>
+        <li>Useful in schools, public counters, hospitals.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. Future Improvements</h2>
+      <ul>
+        <li>Use ESP32/Raspberry Pi for better performance & Wi-Fi.</li>
+        <li>ML-based dynamic gesture recognition.</li>
+        <li>Android/iOS app with Bluetooth support.</li>
+        <li>Camera-based gesture recognition.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>10. Real-World Use Cases</h2>
+      <ul>
+        <li>Inclusive education for deaf students.</li>
+        <li>Assistive communication in healthcare.</li>
+        <li>Improved accessibility in public services.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>11. Conclusion</h2>
+      <p>Signora shows that affordable tech can solve big problems. With simple hardware and smart software, it gives voice to gestures and hope to the voiceless.</p>
+    </section>
+
+    <section>
+      <h2>12. Thank You</h2>
+      <p>Thank you for learning about Signora. Let's build an inclusive world, one gesture at a time.</p>
+    </section>
+  </div>
+</body>
+</html>
